@@ -1,0 +1,27 @@
+<!-- <h1>App Component</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias eveniet ad aliquid cupiditate veritatis eos sapiente nihil cum eligendi, minus quidem. Modi consequuntur eveniet architecto, alias pariatur aliquid fugit!</p>
+<h1> {{ variable }} </h1>
+
+<h1 *ngIf="istrue">{{ status }}</h1>
+<ul>
+  <li *ngFor="let member of members">
+    {{ member }}
+  </li>
+</ul>
+
+Here we use first component 
+<app-first></app-first> -->
+
+<nav class="nav">
+  <div class="logo">MySite</div>
+
+  <div class="nav-links">
+
+    <li><a routerLink="/dashboard">Dashboard</a></li>
+    <li><a routerLink="/first">First</a></li>
+    <li><a routerLink="/second">Second</a></li>
+
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

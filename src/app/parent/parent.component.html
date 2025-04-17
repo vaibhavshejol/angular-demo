@@ -1,0 +1,13 @@
+<!-- <ul>
+    <li *ngFor="let fruit of fruits, let i = index">
+        {{ i }} - {{ fruit }}
+    </li>
+</ul> -->
+
+<!-- <p *ngIf="isTrue">Login success</p>
+<p *ngIf="!isTrue">Login unsuccess</p> -->
+
+<app-child [name] = "userName" [criketTeam] = "iplTeam" [fruits] = "fruits" (sendmsgToParent)="getMsgFromChild($event)" (sendCriketTeamToParent)="getCriketTeamFromChild($event)"></app-child>
+<h1>{{ message }}</h1>
+<h1>{{ capitalCriketTeam }}</h1>
+
