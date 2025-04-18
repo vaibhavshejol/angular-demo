@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
+import { BindingSessionComponent } from './binding-session/binding-session.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { ChildComponent } from './parent/child/child.component';
     FooterComponent,
     BodyComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    BindingSessionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
