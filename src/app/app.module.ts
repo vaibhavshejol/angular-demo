@@ -14,12 +14,13 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { BindingSessionComponent } from './binding-session/binding-session.component';
 import { FormsModule } from '@angular/forms';
+import { PipesComponent } from './pipes/pipes.component';
+import { AdditionPipe, ReversePipe } from './pipe/reverse.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent,
     DashboardComponent,
     FirstChildComponent,
     HeaderComponent,
@@ -27,7 +28,10 @@ import { FormsModule } from '@angular/forms';
     BodyComponent,
     ParentComponent,
     ChildComponent,
-    BindingSessionComponent
+    BindingSessionComponent,
+    PipesComponent,
+    ReversePipe,
+    AdditionPipe
   ],
   imports: [
     BrowserModule,
