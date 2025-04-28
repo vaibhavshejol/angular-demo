@@ -1,0 +1,62 @@
+<div class="container">
+    <h1>1. Using DatePipe</h1>
+    <p>normal: {{today}}</p>
+    <p>short: {{today | date:'short'}}</p>
+    <p>long: {{today | date:'long'}}</p>
+    <hr>
+
+    <br>
+    <h1>2. Using CurrencyPipe</h1>
+    <p>India: {{price | currency:'INR'}}</p>
+    <p>Euro: {{price | currency:'EUR'}}</p>
+    <hr>
+
+    <br>
+    <h1>3. Using UpperCasePipe / LoweCasePipe</h1>
+    <p>Name: {{str | uppercase}}</p>
+    <p>Name: {{str | lowercase}}</p>
+    <hr>
+    
+    <br>
+    <h1>4. Using DecimalPipe</h1>
+    <p>Number: {{number | number:'1.0-2'}}</p>
+    <p>Number: {{number | number:'2.1-2'}}</p>
+    <p>Number: {{number | number:'3.2-2'}}</p>
+    <p>Number: {{number | number:'4.3-4'}}</p>
+    <hr>
+    
+    <br>
+    <h1>5. Using JsonPipe</h1>
+    <p>{{person}}</p>
+    <p>{{person.name}} - {{person.age}}</p>
+    <p>Person: {{person | json}}</p>
+    <hr>
+
+    <br>
+    <h1>6. Using SlicePipe</h1>
+    <p>Name: {{str | slice:0:3}}</p>
+    <p>Name: {{str | slice:3:7}}</p>
+    <hr>
+
+    <br>
+    <h1>7. Using KeyValuePipe</h1>
+    <ul *ngFor="let p of person | keyvalue">
+        {{p.key}} - {{p.value}}
+    </ul>
+    <hr>
+
+    <br>
+    <h1>8. Using i18nSelectPipe</h1>
+    <p>{{gender | i18nSelect: inviteMap}}</p>
+    <button (click)="changeGender('male')">Male</button>
+    <button (click)="changeGender('female')">Female</button>
+    <button (click)="changeGender('other')">Other</button>
+    <hr>
+
+    <br>
+    <h1>9. Using Custom Pipe</h1>
+    <p>Reverse: {{str | reverse}}</p>
+    <p>Additon: {{num1 | addition:10}}</p>
+    <hr>
+
+</div>
